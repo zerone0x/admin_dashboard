@@ -1,0 +1,205 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 0;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+svg{
+    width: 50px;
+    height: 50px;
+}
+.sidebar{
+    grid-column: 1/2;
+    background-color: #0ea5e9;
+    color: white;
+    gap:29px;
+    min-width: 300px;
+    font-size: 17px;
+    font-weight: 500;
+    /* display: grid; */
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.nav, .settings,.log{
+    display: grid;
+    grid-column: 1fr;
+    gap:15px;
+
+}
+.nav li:hover, .settings li:hover, .logo li:hover{
+    background-color: #06b6d4;
+}
+
+
+
+
+
+.righter{
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-column: 2/3;
+    grid-template-rows: 0.09fr 5fr ;
+    min-width: 100vp;
+    margin: 0;
+}
+.rightup{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 1fr 1.2fr;
+    background-color: white;
+    gap:15px;
+    padding: 15px;
+    margin: 0;
+}
+.card .title, .boxc .title{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.search{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row:1/2;
+    gap:15px;
+    align-self: center;
+}
+.searchbar{
+    align-items: center;
+    border-radius: 10px; /* 左边两个角是圆的 */
+  min-height: 40px;
+  min-width: 300px;
+  border: 1px solid #ddd; /* 轻微的边框 */
+  outline: none; /* 移除焦点时的轮廓 */
+  padding: 0 15px; /* 文字和边框的间距 */
+  font-size: 16px; /* 文字大小 */
+  color: #333; /* 文字颜色 */
+
+}
+.searchfirst{
+    justify-self:start; 
+    grid-column: 1/2;
+}
+.searchsecond{
+    justify-self:end;
+    grid-column: 2/3;
+}
+
+
+
+.personal{
+    grid-column: 1/2;
+    grid-row:2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.profile{
+    display: grid;
+    grid-column: 1/2;
+    justify-self:start; 
+    grid-template-columns: 1fr 1fr;
+}
+.actionbtn{
+    grid-column: 2/3;
+    justify-self: end;
+    align-self: center;
+}
+.rightdown{
+    grid-template-columns: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 3fr;
+    background-color: #f5f5f4;
+}
+.projects{
+    padding: 20px;
+
+    /* display: grid;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    grid-template-rows: 0.01fr 3fr;
+    gap: 13px; */
+}
+.rightend{
+    grid-column: 2/3;
+}
+.allproj{
+    /* padding: 20px; */
+
+    display: grid;
+    grid-row: 2/3;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.card{
+    display: grid;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 16px;
+    border-left: 4px solid yellowgreen;
+    height: 260px;
+}
+.bookmark{
+    justify-self: end;
+    /* padding-left: 14px; */
+}
+.splitannounce,.splitrend{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 16px;
+    padding: 16px;
+    overflow: hidden;
+}
+.boxc, .rank{
+    border-bottom: 2px solid gray;
+}
+.card:hover{
+    background-color: #0056b3;
+}
+.card svg{
+    width: 20px;
+    height: 20px;
+}
+
+.announcement{
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.trending{
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.rank{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+button{
+    background-color: #0ea5e9;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    padding: 8px 20px;
+}
+.actionbtn{
+   gap:15px;
+    
+}
+ul{
+    list-style-type: none;
+}
